@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fayz — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0A1628;
+      --card: #111d2e;
+      --gold: #C8A96E;
+      --text: #E8E0D0;
+      --muted: #8a8578;
+      --border: #1a2a3e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      color: var(--gold);
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .header .arabic {
+      color: var(--gold);
+      font-size: 24px;
+      opacity: 0.6;
+      margin-bottom: 12px;
+    }
+    .header .updated {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .lang-switch button {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 20px;
+      margin: 0 4px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: var(--gold);
+      color: var(--bg);
+      border-color: var(--gold);
+    }
+    h2 {
+      color: var(--gold);
+      font-size: 18px;
+      margin: 28px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 12px; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li {
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    li::marker { color: var(--gold); }
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    a { color: var(--gold); }
+    .content { display: none; }
+    .content.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <h1>Fayz — Privacy Policy</h1>
+    <div class="updated">Last updated: February 12, 2026</div>
+  </div>
+
+  <div class="lang-switch">
+    <button class="active" onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('ru')">Русский</button>
+  </div>
+
+  <!-- ===== ENGLISH ===== -->
+  <div id="en" class="content active">
+    <h2>1. Introduction</h2>
+    <p>The "Fayz" application (hereinafter the "App") is designed to help Muslims perform daily rituals, read the Quran, track prayer times, and participate in the Ramadan marathon. We take the privacy of your data seriously.</p>
+
+    <h2>2. Data We Collect</h2>
+    <ul>
+      <li><strong>Location data</strong> — used ONLY for calculating prayer times and determining Qibla direction. Data is processed locally on your device and is NOT transmitted to any servers.</li>
+      <li><strong>Quran reading progress</strong> — stored locally on your device via AsyncStorage to allow resuming reading.</li>
+      <li><strong>Ramadan marathon progress</strong> — stored locally on your device.</li>
+      <li><strong>App settings</strong> (prayer calculation method, madhab, notifications) — stored locally.</li>
+    </ul>
+
+    <h2>3. We Do NOT Collect</h2>
+    <ul>
+      <li>Personal data (name, email, phone number)</li>
+      <li>Usage data for analytics</li>
+      <li>Data for advertising networks</li>
+      <li>No data is shared with any third parties</li>
+    </ul>
+
+    <h2>4. Data Storage</h2>
+    <p>All data is stored exclusively on your device. The app works completely offline — no servers, no cloud storage, no databases. All data is automatically deleted when you uninstall the app.</p>
+
+    <h2>5. Permissions</h2>
+    <ul>
+      <li><strong>Location</strong> — for calculating accurate prayer times and Qibla direction based on your location.</li>
+      <li><strong>Notifications</strong> — for prayer time reminders (at your preference).</li>
+      <li><strong>Magnetometer/Compass</strong> — for determining Qibla direction.</li>
+    </ul>
+
+    <h2>6. Subscriptions & Payments</h2>
+    <p>The app offers paid subscriptions through the Apple App Store / Google Play Store. All payments are processed directly by Apple/Google — we do not have access to your payment data.</p>
+    <p>Available subscriptions:</p>
+    <ul>
+      <li>Premium — $7.99/month</li>
+      <li>Supporter — $14.99/month</li>
+    </ul>
+    <p>Subscriptions automatically renew. You can cancel your subscription at any time through your Apple ID or Google Play account settings. Payment will be charged to your Apple ID or Google Play account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is not intended for children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>8. Content Sources</h2>
+    <ul>
+      <li><strong>Quran</strong>: Translation by Elmir Kuliev (Russian), Saheeh International (English)</li>
+      <li><strong>Hadith</strong>: Authentic collections of al-Bukhari and Muslim</li>
+      <li><strong>Adhkar</strong>: "Fortress of the Muslim" (Hisn al-Muslim) published by Darussalam, Riyadh</li>
+      <li><strong>Prayer times</strong>: Adhan library (ISNA, Muslim World League, Umm al-Qura, and other calculation methods)</li>
+    </ul>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy. Significant changes will be communicated through app updates.</p>
+
+    <h2>10. Contact</h2>
+    <p>For all inquiries, contact us:</p>
+    <ul>
+      <li>Telegram: <a href="https://t.me/Fayz_support_bot">@Fayz_support_bot</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== RUSSIAN ===== -->
+  <div id="ru" class="content">
+    <h2>1. Введение</h2>
+    <p>Приложение «Fayz» (далее «Приложение») создано для помощи мусульманам в выполнении ежедневных обрядов, чтении Корана, отслеживании времени намазов и участии в марафоне Рамадан. Мы серьёзно относимся к конфиденциальности ваших данных.</p>
+
+    <h2>2. Данные которые мы собираем</h2>
+    <ul>
+      <li><strong>Данные геолокации</strong> — используются ТОЛЬКО для расчёта времени намаза и определения направления Кибла. Данные обрабатываются локально на вашем устройстве и НЕ передаются на какие-либо серверы.</li>
+      <li><strong>Прогресс чтения Корана</strong> — хранится локально на устройстве через AsyncStorage для продолжения чтения.</li>
+      <li><strong>Прогресс марафона Рамадан</strong> — хранится локально на устройстве.</li>
+      <li><strong>Настройки приложения</strong> (метод расчёта намаза, мазхаб, уведомления) — хранятся локально.</li>
+    </ul>
+
+    <h2>3. Мы НЕ собираем</h2>
+    <ul>
+      <li>Персональные данные (имя, email, телефон)</li>
+      <li>Данные для аналитики</li>
+      <li>Данные для рекламных сетей</li>
+      <li>Никакие данные не передаются третьим лицам</li>
+    </ul>
+
+    <h2>4. Хранение данных</h2>
+    <p>Все данные хранятся исключительно на вашем устройстве. Приложение работает полностью оффлайн — без серверов, облачных хранилищ и баз данных. При удалении приложения все данные автоматически удаляются.</p>
+
+    <h2>5. Разрешения</h2>
+    <ul>
+      <li><strong>Геолокация</strong> — для точного расчёта времени намаза и определения направления Кибла.</li>
+      <li><strong>Уведомления</strong> — для напоминаний о времени намаза (по вашему выбору).</li>
+      <li><strong>Магнитометр/Компас</strong> — для определения направления Кибла.</li>
+    </ul>
+
+    <h2>6. Подписки и платежи</h2>
+    <p>Приложение предлагает платные подписки через Apple App Store / Google Play Store. Все платежи обрабатываются непосредственно Apple/Google — мы не имеем доступа к вашим платёжным данным.</p>
+    <p>Доступные подписки:</p>
+    <ul>
+      <li>Премиум — $7.99/мес</li>
+      <li>Сапортер — $14.99/мес</li>
+    </ul>
+    <p>Подписки продлеваются автоматически. Вы можете отменить подписку в любое время через настройки вашего Apple ID или Google Play аккаунта. Оплата будет списана с вашего аккаунта при подтверждении покупки. Подписка автоматически продлевается, если автоматическое продление не отключено не менее чем за 24 часа до окончания текущего периода.</p>
+
+    <h2>7. Дети</h2>
+    <p>Приложение не предназначено для детей младше 13 лет. Мы сознательно не собираем данные детей.</p>
+
+    <h2>8. Источники контента</h2>
+    <ul>
+      <li><strong>Коран</strong>: перевод Эльмира Кулиева (русский), Saheeh International (английский)</li>
+      <li><strong>Хадисы</strong>: достоверные сборники аль-Бухари и Муслима</li>
+      <li><strong>Азкары</strong>: «Крепость мусульманина» (Хисн аль-Муслим), издательство Darussalam, Эр-Рияд</li>
+      <li><strong>Время намаза</strong>: библиотека Adhan (ISNA, Лига мусульманского мира, Умм аль-Кура и другие методы расчёта)</li>
+    </ul>
+
+    <h2>9. Изменения</h2>
+    <p>Мы можем обновлять эту политику. О существенных изменениях будет сообщено через обновления приложения.</p>
+
+    <h2>10. Контакты</h2>
+    <p>По всем вопросам обращайтесь:</p>
+    <ul>
+      <li>Telegram: <a href="https://t.me/Fayz_support_bot">@Fayz_support_bot</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>Fayz (فيض) — Only Quran and authentic Sunnah</p>
+    <p><a href="https://t.me/Fayz_support_bot">Support</a></p>
+    <p>© 2026 Fayz. All rights reserved.</p>
+  </div>
+</div>
+
+<script>
+function switchLang(lang) {
+  document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
